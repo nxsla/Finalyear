@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display items in a line */
+    margin-right: 20px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    padding: 10px 15px; /* Padding around links */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Dark background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Current Date Styles */
+#current-date {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Main Content Styles */
+.container {
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 100px auto; /* Adjusted for fixed header */
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+/* Form Styles */
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem; /* Add spacing between fields */
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%; /* Center icon vertically */
+    left: 10px; /* Adjust distance from the left */
+    transform: translateY(-50%);
+    color: #757575; /* Softer icon color */
+    font-size: 1.2rem; /* Ensure icon size matches input */
+}
+
+.input-group input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 2.5rem; /* Add space for the icon */
+    font-size: 15px;
+}
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #757575;
+    position: absolute;
+    left: 2.5rem; /* Adjust to align with input text after icon */
+    top: -0.7rem;
+    font-size: 0.9rem;
+    transition: 0.3s ease all;
+    background-color: white; /* Prevent text blending with background */
+    padding: 0 0.2rem; /* Add padding around text */
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -1.5rem;
+    color: hsl(327, 90%, 28%);
+    font-size: 0.8rem;
+}
+
+/* Recover Link Styles */
+.recover {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: rgb(125, 125, 235);
+}
+
+.recover a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: hsl(327, 90%, 28%);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 1rem 0; /* Add space between elements */
+}
+
+.btn:hover {
+    background: #07001f;
+}
+
+/* Or Divider */
+.or {
+    font-size: 1rem;
+    margin: 1rem 0; /* Add spacing around the divider */
+    text-align: center;
+    color: #757575;
+}
+
+/* Icon Styles */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Add spacing between icons */
+}
+
+.icons i {
+    color: hsl(327, 90%, 28%);
+    padding: 0.8rem;
+    border-radius: 50%; /* Make the icon area circular */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0.5px solid #dfe9f5;
+    transition: 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    background: #07001f;
+    color: white;
+}
+
+/* Links Section Styles */
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links button {
+    color: hsl(327, 90%, 28%);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.links button:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+}
